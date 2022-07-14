@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import PropTypes from "prop-types";
 import { Form, Button, Container, Row, Col } from "react-bootstrap";
 import { useNavigate } from "react-router-dom";
@@ -6,6 +6,7 @@ import { useForm } from "react-hook-form";
 import { MultiSelect } from "react-multi-select-component";
 import "./BookSpace.scss";
 import BookSpaceModal from "./BookSpaceModal";
+import ApiUtility from "../../ApiUtility";
 
 const options = [
   { label: "User 1", value: "1" },
@@ -30,6 +31,15 @@ const BookSpaceForm = () => {
     purpose: "",
     booking_for: [],
   });
+
+  useEffect(() => {
+    getWorkSpaceDetails()
+  }, [])
+
+  const getWorkSpaceDetails = async () => {
+    const response = ApiUtility.getWorkSpaceDetails()
+    debugger
+  }
 
   const handleClose = () => {
     setShow(false);
