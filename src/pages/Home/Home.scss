@@ -19,16 +19,20 @@ home {
 }
 
 .card-headings {
-    font-weight: bold;
+    // font-weight: bold;
+    color: #262F36;
     font-size: 15px;
+    font-family: "lato-bold";
 }
 
 .card-headers {
     text-align: left;
-    color: black;
+    color: #262F36;
     font-size: 15px;
-    font-weight: bold;
+    // font-weight: bold;
     font-family: "lato-Medium";
+    margin-left: 15%;
+    
 }
 
 .icon-headings {
@@ -63,6 +67,7 @@ home {
 
 .booking-icon:hover {
     background-color: #f06a3e;
+    font-family: "loto-Medium";
     color: white;
     border-color: #f06a3e;
 }
@@ -73,35 +78,42 @@ home {
 
 .headings {
     margin-left: 3%;
-    color: black;
-    font-size: 18px;
-    font-family: "Times New Roman", Times, serif;
+    color: #0A1656;
+    font-size: 14px;
+    font-family: "lato-heavy";
 }
 
 #welcomeName-row {
     margin-left: 4%;
-    font-weight: normal
+    font-weight: normal;
+    font-family: "loto-Medium";
+    font-size: 20px;
+    color: #262F36;
 }
 
 #text-name {
     color: #F06A3E !important;
-    font-weight: bold;
+    // font-weight: bold;
+    font-size: 20px;
+    font-family: "loto-Medium";
 }
 
 .text-initial {
     margin-left: 8%;
     margin-top: 3%;
     height: fit-content;
-    width: 400px;
-    height: 160px;
 }
 
 .ub-border-left {
-    border-left: 2px solid #4fba46 !important
+    border-left: 4px solid #21BA45!important;
 }
 
 .rb-border-left {
-    border-left: 2px solid #F06A3E !important;
+    border-left: 4px solid #F06A3E !important;
+}
+
+.rrb-border-left {
+    border-left: 4px solid #DB2828 !important;
 }
 
 .text-initial:hover {
@@ -110,4 +122,26 @@ home {
 
 .custom-recentbooking-section {
     height: auto;
+}
+
+.card-list-item {
+    // text-decoration: none;
+    font-family: "lato-regular";
+    li {
+        padding-left: 0px;
+        list-style-type: none;
+    }
+}
+
+.card-body-item {
+    padding-bottom: 0px;
+}
+
+.not-founs-span {
+    color: #F06A3E;
+    padding-left: 45px;
+}
+
+.book-label {
+    float: right;
 }
