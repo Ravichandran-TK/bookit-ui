@@ -6,14 +6,7 @@ import { useDispatch } from "react-redux";
 
 const Header = () => {
   const navigate = useNavigate();
-
-  // const handleLogout = () => {
-  //   localStorage.clear("user");
-  //   navigate(`/`);
-  //   window.location.reload();
-  // };
   const dispatch = useDispatch();
-
   const handleLogout = () => {
     dispatch(setLogout(JSON.parse(localStorage.getItem('user'))));
     navigate(`/`);
